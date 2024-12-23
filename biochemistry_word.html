@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html lang="zh-CN">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>生物化学词处理器</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            text-align: center;  
+            margin-top: 50px;  
+        }  
+        button {  
+            margin: 10px;  
+            padding: 10px 20px;  
+            font-size: 16px;  
+            cursor: pointer;  
+        }  
+        #buttons-container {  
+            display: none; /* 初始隐藏按钮 */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>生物化学词处理器</h1>  
+    <button id="showAllButton" onclick="showAll()">显示所有按钮</button>  
+    <div id="buttons-container">  
+        <button id="searchButton" onclick="search()">搜索</button>  
+        <button id="practiceButton" onclick="practice()">练习</button>  
+        <button id="editButton" onclick="edit()">编辑</button>  
+        <button id="quitButton" onclick="quit()">退出</button>  
+    </div>  
+
+    <script>  
+        // 显示所有按钮  
+        function showAll() {  
+            document.getElementById('buttons-container').style.display = 'block';  
+            document.getElementById('showAllButton').style.display = 'none';  
+        }  
+
+        // 示例功能 - 搜索  
+        function search() {  
+            alert("执行搜索功能！");  
+        }  
+
+        // 示例功能 - 练习  
+        function practice() {  
+            alert("执行练习功能！");  
+        }  
+
+        // 示例功能 - 编辑  
+        function edit() {  
+            alert("执行编辑功能！");  
+        }  
+
+        // 示例功能 - 退出  
+        function quit() {  
+            alert("退出程序！");  
+        }  
+    </script>  
+</body>  
+</html>
